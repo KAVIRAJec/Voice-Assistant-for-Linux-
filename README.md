@@ -1,4 +1,4 @@
-# Voice Assistant: Your Personal Assistant with AI
+# Voice Assistant for Linux: Your Personal Assistant with AI
 
 ## Overview
 
