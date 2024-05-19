@@ -40,11 +40,10 @@ Plan for integration with ChatGPT for advanced language processing and improved 
 
     ```bash
     # Frontend
-    cd frontend
+    cd src
     npm install
 
     # Backend
-    cd backend
     npm install
     ```
 
