@@ -298,7 +298,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <div className="image">
-          <img src="giphy.gif" alt="image" />
+          <img src="giphy.gif" />
         </div>
         <h1>C H E E M S</h1>
         <p>I'm a Virtual Assistant Cheems, How may I help you?</p>

@@ -8,6 +8,9 @@ const port = 3005;
 
 app.use(cors());
 
+// Serve static files from the 'build' directory
+app.use(express.static(path.join(__dirname, 'build')));
+
 app.all('/openCalculator', (req, res) => {
     if (req.method === 'POST' || req.method === 'GET') {
         exec('sudo gnome-calculator', (error, stdout, stderr) => {
@@ -86,6 +89,11 @@ app.all('/openVSCode', (req, res) => {
     } else {
         res.status(405).send('Method Not Allowed');
     }
+});
+
+// Serve React app for all non-API routes
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(port, () => {
